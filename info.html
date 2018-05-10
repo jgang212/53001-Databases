@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Peyo's Watch Database - Cool facts!</title>
+</head>
+
+<body>
+<h1>Peyo's Watch Database - Cool facts!</h1>
+
+<hr>
+
+This link will list all of the relevant tables (similar to a site map) in this databse:
+<p>
+<a href="list_tables.php">All tables</a>
+
+<hr>
+
+Please enter a watch name to return all relevant information on that watch:
+<i>(Try 'Aba' or 'Tag Heuer Aquaracer' for valid watches, try 'asdf' for invalid)</i>
+<p>
+<form method=get action="watch_attrs.php">
+<b>Enter watch name:</b><br>
+<input type="text" name="watchname"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+Find the average age of all users in the Watch database, given a zip code:
+<i>(Try 60605 for a valid zip code, try 123 for invalid)</i>
+<p>
+<form method=get action="zip_age.php">
+<b>Enter a zip code:</b><br>
+<input type="number" name="zipcode"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+Click this to see if any watches were created before their watch company was founded (i.e. potentially bad data) and display the number of instances of this for each watch company.
+<p>
+<a href="bad_watch_data.php">Time traveling (bad data) watches</a>
+
+<hr>
+
+<form method=get action="type_count.php">
+<p>Select a watch type to view the number of watches of that type in the database</p>
+<input type="radio" name="watchtype" value="Automatic"> Automatic
+<input type="radio" name="watchtype" value="Chronograph"> Chronograph
+<input type="radio" name="watchtype" value="Digital"> Digital
+<input type="radio" name="watchtype" value="Diving"> Diving
+<input type="radio" name="watchtype" value="Dress"> Dress
+<input type="radio" name="watchtype" value="Pilot"> Pilot
+<input type="radio" name="watchtype" value="Sport"> Sport
+<p><input type="submit" value="Submit"></p>
+</form>
+
+<hr>
+
+Display all users (by username) whose favorite watches cost more than $9900 by clicking <a href="rich_users.php">here</a>!
+
+<hr>
+Enter a user name and see the total dollar value of that user's watch collection:
+<i>(Try 'jgang' for a valid username, try 'asdf' for invalid)</i>
+<p>
+<form method=get action="user_collection_value.php">
+<b>Enter a user name:</b><br>
+<input type="text" name="username"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+Want to know which cities have stores that sold watches in 2018? Click <a href="2018_stores.php">here</a>!
+
+<hr>
+
+You can <a href="favorite_companies.php">see here</a>, for each watch company, how many users have favorited watches from them.
+
+</body>
+</html>

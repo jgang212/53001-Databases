@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Peyo's Watch Database - *Delete at your own risk*</title>
+</head>
+
+<body>
+<h1>Peyo's Watch Database - *Delete at your own risk*</h1>
+
+<hr>
+
+<form method=get action="delete_user.php">
+Delete a User (WARNING: this deletes the user's collection as well):<br>
+<b>Enter Username:</b><br>
+<i>(Try 'msmith' for an existing user)</i><br>
+<input type="text" name="username"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<form method=get action="delete_collection.php">
+Delete a Collection:<br>
+<b>Enter Collection ID:</b><br>
+<i>(Try '490JDSOF' for an existing collection)</i><br>
+<input type="text" name="collectionid"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<form method=get action="delete_store.php">
+Delete a Watch Store (WARNING: this deletes the store's sales as well):<br>
+<b>Select Store Name:</b><br>
+<input type="radio" name="storename" value="At The Tower"> At The Tower
+<input type="radio" name="storename" value="Biao"> Biao
+<input type="radio" name="storename" value="Fine Jewelers's"> Fine Jewelers
+<input type="radio" name="storename" value="Fresh Jewelers"> Fresh Jewelers
+<input type="radio" name="storename" value="Haute Horology"> Haute Horology
+<input type="radio" name="storename" value="Jomashop"> Jomashop
+<input type="radio" name="storename" value="Marcy's"> Marcy's
+<input type="radio" name="storename" value="Princeton Jewelers"> Princeton Jewelers
+<input type="radio" name="storename" value="The Times"> The Times
+<input type="radio" name="storename" value="WatchUSeek"> WatchUSeek<br>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<form method=get action="delete_sells.php">
+Delete a Sales Record:<br>
+<i>(Try ('At The Tower', 'Abject', '2017-04-06') for an existing sale)</i><br>
+<b>Select Store Name:</b><br>
+<input type="radio" name="storename" value="At The Tower"> At The Tower
+<input type="radio" name="storename" value="Biao"> Biao
+<input type="radio" name="storename" value="Fine Jewelers's"> Fine Jewelers
+<input type="radio" name="storename" value="Fresh Jewelers"> Fresh Jewelers
+<input type="radio" name="storename" value="Haute Horology"> Haute Horology
+<input type="radio" name="storename" value="Jomashop"> Jomashop
+<input type="radio" name="storename" value="Marcy's"> Marcy's
+<input type="radio" name="storename" value="Princeton Jewelers"> Princeton Jewelers
+<input type="radio" name="storename" value="The Times"> The Times
+<input type="radio" name="storename" value="WatchUSeek"> WatchUSeek<br>
+<b>Enter Watch Name Sold:</b><br>
+<input type="text" name="watchname"><BR>
+<b>Enter Date Sold (MM-DD-YYYY):</b><br>
+<input type="date" name="solddate"><BR>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

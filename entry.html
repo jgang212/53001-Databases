@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Peyo's Watch Database - Add your info!</title>
+</head>
+
+<body>
+<h1>Peyo's Watch Database - Add your info!</h1>
+
+<hr>
+
+<form method=get action="user_update.php">
+Add or update a user:<br>
+<i>(Try 'jgang' for an existing username, 'test' for a new username)</i><br>
+<b>Enter Username:</b><br>
+<input type="text" name="username"><BR>
+<b>Enter Real Name:</b><br>
+<input type="text" name="realname"><BR>
+<b>Enter Age:</b><br>
+<input type="number" name="age"><BR>
+<b>Enter Zip Code:</b><br>
+<input type="number" name="zipcode"><BR>
+<b>Enter Favorite Watch Name:</b><br>
+(if does not exist, this watch name will be created with empty fields)<br>
+<input type="text" name="favoritewatch"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<form method=get action="watch_update.php">
+Add or update a watch:<br>
+<i>(Try 'Aba' for an existing watch, 'test' for a new watch)</i><br>
+<b>Enter Watch Name:</b><br>
+<input type="text" name="watchname"><BR>
+<b>Select Watch Type:</b><br>
+<input type="radio" name="watchtype" value="Automatic"> Automatic
+<input type="radio" name="watchtype" value="Chronograph"> Chronograph
+<input type="radio" name="watchtype" value="Digital"> Digital
+<input type="radio" name="watchtype" value="Diving"> Diving
+<input type="radio" name="watchtype" value="Dress"> Dress
+<input type="radio" name="watchtype" value="Pilot"> Pilot
+<input type="radio" name="watchtype" value="Sport"> Sport<br>
+<b>Enter Price:</b><br>
+<input type="number" step="0.01" name="price"><BR>
+<b>Enter Creation Year:</b><br>
+<input type="number" name="creationyear"><BR>
+<b>Enter Movement ID:</b><br>
+<input type="text" name="movementid"><BR>
+<b>Enter Company Name:</b><br>
+<input type="text" name="companyname"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<form method=get action="wcompany_update.php">
+Add or update a watch company:<br>
+<i>(Try 'IWC' for an existing watch company, 'test' for a new watch company)</i><br>
+<b>Enter Company Name:</b><br>
+<input type="text" name="companyname"><BR>
+<b>Enter Location:</b><br>
+<input type="text" name="location"><BR>
+<b>Enter Year Founded:</b><br>
+<input type="number" name="yearfounded"><BR>
+<input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<form method=get action="sell_update.php">
+Add a watch sold by a store (can have duplicates):<br>
+<b>Select Store Name:</b><br>
+<input type="radio" name="storename" value="At The Tower"> At The Tower
+<input type="radio" name="storename" value="Biao"> Biao
+<input type="radio" name="storename" value="Fine Jewelers's"> Fine Jewelers
+<input type="radio" name="storename" value="Fresh Jewelers"> Fresh Jewelers
+<input type="radio" name="storename" value="Haute Horology"> Haute Horology
+<input type="radio" name="storename" value="Jomashop"> Jomashop
+<input type="radio" name="storename" value="Marcy's"> Marcy's
+<input type="radio" name="storename" value="Princeton Jewelers"> Princeton Jewelers
+<input type="radio" name="storename" value="The Times"> The Times
+<input type="radio" name="storename" value="WatchUSeek"> WatchUSeek<br>
+<b>Enter Watch Name Sold:</b><br>
+<input type="text" name="watchname"><BR>
+<b>Enter Date Sold (MM-DD-YYYY):</b><br>
+<input type="date" name="solddate"><BR>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
