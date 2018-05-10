@@ -1,1 +1,1 @@
-# 53001-Databases
+An ERD diagram was created initially to design this database. The queries were then created for the desired functionality and implemented within PHP scripts. Lastly, HTML was used to design the front-end.
